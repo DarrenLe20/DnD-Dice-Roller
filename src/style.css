@@ -38,12 +38,14 @@ body {
   align-items: center;
   justify-content: center;
   background-color: wheat;
-  min-height: calc((100vh - 50px - 60px));
+  padding-bottom: 60px;
+  padding-top: 10px;
+  min-height: calc(100vh - 20vh);
 }
 
 .menu {
-  padding-top: 300px;
   display: flex;
+  padding-top: 20px;
   flex-direction: column;
   gap: 30px;
   align-items: center;
@@ -73,6 +75,10 @@ body {
   box-shadow: none;
 }
 
+.numRow button:hover {
+  background-color: lightgray;
+}
+
 .typeRow {
   display: flex;
   gap: 30px;
@@ -96,8 +102,59 @@ body {
   box-shadow: none;
 }
 
+.typeRow button:hover {
+  background-color: lightgray;
+}
+
 .mainArea {
   min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainArea button {
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+  border: 0;
+  margin: 20px;
+  padding: 10px 20px;
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-size: x-large;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.mainArea button:hover {
+  background-color: lightgray;
+}
+
+.mainArea button:active {
+  box-shadow: none;
+}
+
+.mainArea .dice {
+  font-size: 70px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.diceArea {
+  padding: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.btnArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
@@ -105,8 +162,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: wheat;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   cursor: url("./glove3_1_1_48x48.png"), auto;
   /* Push footer to the bottom */
   position: absolute;
