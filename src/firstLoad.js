@@ -138,9 +138,7 @@ function addContent() {
     const all = diceArea.querySelectorAll(".dice");
     let i = 0;
     all.forEach(function (dice) {
-      console.log(allDice[i].getSide());
       const res = allDice[i].roll();
-      console.log(res);
       dice.textContent = res;
       i++;
     });
