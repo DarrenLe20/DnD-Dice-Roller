@@ -1,4 +1,8 @@
+import Dice from "./dice";
+
 function addContent() {
+  let diceFlag = 0;
+  let numFlag = 0;
   const page = document.querySelector("#content");
   // Header
   const header = document.createElement("div");
@@ -22,7 +26,7 @@ function addContent() {
   numRow.classList.add("numRow");
   for (let i = 1; i < 6; i++) {
     const numBtn = document.createElement("button");
-    numBtn.classList.add("numBtn" + i);
+    numBtn.classList.add(i);
     numBtn.textContent = i;
     numRow.appendChild(numBtn);
   }
@@ -30,22 +34,22 @@ function addContent() {
   const typeRow = document.createElement("div");
   typeRow.classList.add("typeRow");
   const d20 = document.createElement("button");
-  d20.classList.add("d20");
+  d20.classList.add("20");
   d20.textContent = "D20";
   const d12 = document.createElement("button");
-  d12.classList.add("d12");
+  d12.classList.add("12");
   d12.textContent = "D12";
   const d10 = document.createElement("button");
-  d10.classList.add("d10");
+  d10.classList.add("10");
   d10.textContent = "D10";
   const d8 = document.createElement("button");
-  d8.classList.add("d8");
+  d8.classList.add("8");
   d8.textContent = "D8";
   const d6 = document.createElement("button");
-  d6.classList.add("d6");
+  d6.classList.add("6");
   d6.textContent = "D6";
   const d4 = document.createElement("button");
-  d4.classList.add("d4");
+  d4.classList.add("4");
   d4.textContent = "D4";
   typeRow.appendChild(d20);
   typeRow.appendChild(d12);
@@ -53,7 +57,22 @@ function addContent() {
   typeRow.appendChild(d8);
   typeRow.appendChild(d6);
   typeRow.appendChild(d4);
-
+  // Create dice flag
+  const allTypeBtn = typeRow.querySelectorAll("button");
+  allTypeBtn.forEach((button) =>
+    button.addEventListener("click", () => {
+      diceFlag = button.className;
+      console.log(diceFlag);
+    })
+  );
+  // Create number flag
+  const allNumBtn = numRow.querySelectorAll("button");
+  allNumBtn.forEach((button) =>
+    button.addEventListener("click", () => {
+      numFlag = button.className;
+      console.log(numFlag);
+    })
+  );
   // Footer
   const footer = document.createElement("div");
   footer.classList.add("footer");
