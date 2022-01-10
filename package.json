@@ -1,0 +1,26 @@
+{
+  "name": "dnd-dice-roller",
+  "version": "1.0.0",
+  "description": "1. A webapp that helps the user roll their dice for board games like Dungeons and Dragons. 2. How to use - Choose the type of dice - Choose the number of dice  - Press \"Roll\" - Press \"Reset\" to return to the homepage  - Press \"Reroll\" to continue rolling with the currently chosen set of dice  3. Made with HTML, CSS, Javascript + Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrenLe20/DnD-Dice-Roller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarrenLe20/DnD-Dice-Roller/issues"
+  },
+  "homepage": "https://github.com/DarrenLe20/DnD-Dice-Roller#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

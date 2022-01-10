@@ -1,0 +1,117 @@
+html {
+  position: relative;
+  min-height: 100%;
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+}
+
+body {
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  font-family: dutch-mediaeval-pro, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #871e19;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-family: dutch-mediaeval-pro, sans-serif;
+  background-color: #871e19;
+  border: 0;
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+  color: white;
+  font-size: xx-large;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  min-height: calc((100vh - 50px - 60px));
+}
+
+.menu {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.numRow {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.numRow button {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: 0;
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-size: x-large;
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.numRow button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.typeRow {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeRow button {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  border: 0;
+  font-family: dutch-mediaeval-pro, sans-serif;
+  font-size: x-large;
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.typeRow button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.mainArea {
+  min-height: 100px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: url("./glove3_1_1_48x48.png"), auto;
+  /* Push footer to the bottom */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
