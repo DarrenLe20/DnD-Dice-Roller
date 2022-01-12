@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DarrenLe20/DnD-Dice-Roller#readme",
   "devDependencies": {
     "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
